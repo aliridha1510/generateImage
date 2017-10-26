@@ -34,8 +34,8 @@ public class RestController {
 	@RequestMapping("/Mandelbrot/deleteFromS3")
 	@ResponseBody
 	public Response delete(@RequestParam("bucketname") String bucketname) throws IOException {
-		AWSCredentials Credentials = new BasicAWSCredentials("AKIAI6D65YVGCS22CG6A",
-				"Hbydaugd6ORiHbWMWBTi6D0riYhIQjkQ76gWHcyG");
+		AWSCredentials Credentials = new BasicAWSCredentials("HJAHSHSJSJ",
+				"HSHJAKAKSJSJSHSNSKLA");
 		UploadFile s3client = new UploadFile(bucketname);
 		Image img = new Image();
 		File f = img.generateimage();
